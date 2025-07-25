@@ -6,8 +6,10 @@ app = BedrockAgentCoreApp()
 
 
 @app.entrypoint
-def my_agent(request):
-    return strands_agent_bedrock(request.get("prompt"))
+def my_agent(payload):
+    user_inquiry = payload.get("user_input", "Hello, how can I help you?")
+    result = strands_agent_bedrock(user_inquiry)
+    return {"result": result.message}
 
 
 app.run()

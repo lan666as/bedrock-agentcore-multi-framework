@@ -21,7 +21,7 @@ agents:
     bedrock_agentcore:
       agent_id: test_multi_framework-0YQXic33NV
       agent_arn: arn:aws:bedrock-agentcore:us-east-1:570214690808:runtime/test_multi_framework-0YQXic33NV
-      agent_session_id: null
+      agent_session_id: da4abe59-43d8-4c5b-8e8b-ddcc361d1705
     codebuild:
       project_name: null
       execution_role: null
